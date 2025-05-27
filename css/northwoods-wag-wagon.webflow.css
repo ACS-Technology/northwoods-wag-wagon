@@ -486,7 +486,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-rows: auto;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -533,6 +533,10 @@
 
 .grid-layout.tablet-1-column.grid-gap-lg {
   grid-auto-columns: 1fr;
+}
+
+.grid-layout.mobile-portrait-1-column.grid-gap-sm {
+  text-align: center;
 }
 
 .grid-layout.desktop-1-column {
@@ -5390,6 +5394,427 @@ img {
   text-align: center;
 }
 
+.faq-toggle {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  display: flex;
+}
+
+.faq-toggle:hover {
+  color: #338cff;
+}
+
+.grid-one-column {
+  grid-column-gap: 40px;
+  grid-row-gap: 24px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+
+.faq-title-wrapper-plain {
+  color: #160042;
+  white-space: normal;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+}
+
+.paragraph-regular-bold {
+  letter-spacing: -.03em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.faq-heading-wrapper {
+  z-index: 5;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 48px;
+  display: flex;
+  position: relative;
+}
+
+.faq-content {
+  background-color: #0000;
+  width: 100%;
+  display: block;
+  position: static;
+  overflow: hidden;
+}
+
+.heading-detail-small {
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.heading-detail-small.margin-bottom-12 {
+  margin-bottom: 12px;
+}
+
+.faq-item-plain {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 28px 32px;
+  transition: all .3s;
+  display: block;
+}
+
+.faq-content-wrapper {
+  width: 100%;
+  max-width: 90%;
+  line-height: 36px;
+}
+
+.paragraph-regular {
+  letter-spacing: -.02em;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container-x-small {
+  width: 100%;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.faq-arrow {
+  color: #6b7094;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+
+.section-faq {
+  background-color: #f3f5fb;
+  padding: 120px 5%;
+  position: relative;
+}
+
+.form-input-wrapper {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.subheading-small {
+  color: #24262d;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.subheading-small.text-color-brand {
+  color: #6869ac;
+}
+
+.form-grid {
+  grid-template-rows: auto;
+}
+
+.contact-title-wrapper {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  text-align: center;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.column-x-small {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  flex-flow: column;
+  display: flex;
+}
+
+.column-x-small.text-align-center {
+  text-align: center;
+}
+
+.column-2x-small {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  flex-flow: column;
+  display: flex;
+}
+
+.h2-heading {
+  color: #24262d;
+  letter-spacing: -.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text-link-tertiary {
+  color: #575f70;
+  text-decoration: underline;
+  transition: color .3s;
+}
+
+.text-link-tertiary:hover {
+  color: #24262d;
+}
+
+.button-primary {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #6869ac;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: inline-flex;
+}
+
+.button-primary:hover {
+  background-color: #2b2c50;
+}
+
+.row-regular {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.contact-form-wrapper {
+  grid-column-gap: 64px;
+  grid-row-gap: 64px;
+  flex-flow: column;
+  max-width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.overline-regular {
+  color: #6869ac;
+  letter-spacing: -.18px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.column-regular {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.text-color-brand {
+  color: #6869ac;
+}
+
+.contact-brand-pattern {
+  z-index: 0;
+  pointer-events: none;
+  background-image: linear-gradient(0deg, #fff 5%, #fff0 30% 70%, #fff 95%), radial-gradient(circle farthest-side, #fff0, #fff 90%), none;
+  background-position: 0 0, 0 0, 50%;
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+  position: absolute;
+  inset: 0%;
+}
+
+.select-field-icon {
+  color: #747c90;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  inset: auto 12px auto auto;
+}
+
+.form-select {
+  color: #6869ac;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #6869ac;
+  border-radius: 8px;
+  min-height: 48px;
+  margin-bottom: 0;
+  padding: 8px 48px 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.form-select:focus {
+  border-width: 1.5px;
+  border-color: #6869ac;
+}
+
+.feature-link-small {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  background-color: #f6f7f9;
+  border: 1px dashed #6869ac;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 16px 24px;
+  display: flex;
+}
+
+.contact-text-field {
+  color: #6869ac;
+  background-color: #fff;
+  border: 1px solid #6869ac;
+  border-radius: 8px;
+  min-height: 48px;
+  margin-bottom: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.contact-text-field:focus {
+  border-width: 1.5px;
+  border-color: #6869ac;
+}
+
+.contact-text-field::placeholder {
+  color: #6869ac;
+}
+
+.contact-text-field.text-area {
+  min-height: 120px;
+}
+
+.icon-x-small {
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.paragraph-small {
+  color: #3d424c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.paragraph-small.text-color-tertiary {
+  color: #575f70;
+}
+
+.paragraph-large {
+  color: #3d424c;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.paragraph-x-small {
+  color: #3d424c;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.background-dots {
+  z-index: 1;
+  pointer-events: none;
+  color: #6869ac;
+  justify-content: center;
+  align-items: center;
+  margin-top: -32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  inset: 0% 0% auto;
+}
+
+.feature-arrow {
+  color: #6869ac;
+  background-color: #fff;
+  border-radius: 40px;
+  flex: none;
+  padding: 4px;
+}
+
+.form-block {
+  margin-bottom: 0;
+}
+
+.feature-divider {
+  border-left: 1px dashed #6869ac;
+  width: 1px;
+  height: 100%;
+}
+
+.container-large {
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.section-regular {
+  padding: 10px 5%;
+  position: relative;
+}
+
+.section-regular.contact {
+  background-image: url('../images/ChatGPT-Image-May-27-2025-12_44_50-PM_1.avif');
+  background-position: 0 0;
+  background-size: auto;
+}
+
+.column-small {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: column;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .container.small-container {
     width: 90%;
@@ -5671,6 +6096,7 @@ img {
   }
 
   .nav-link {
+    color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1747919826079---core-accent-color--accent-primary);
     font-size: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1747919826079---text-lg--lg-text-size);
     justify-content: space-between;
     align-items: center;
@@ -5882,6 +6308,10 @@ img {
 
   .gallery-tabs-menu {
     padding-left: 0%;
+  }
+
+  .faq-content {
+    width: 100%;
   }
 }
 
@@ -6289,6 +6719,19 @@ img {
     margin-bottom: 40px;
     padding-left: 0%;
   }
+
+  .section-faq {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .background-dots {
+    pointer-events: none;
+  }
+
+  .feature-divider {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -6513,6 +6956,14 @@ img {
     flex-flow: column wrap;
     align-items: center;
     display: flex;
+  }
+
+  .faq-item-plain {
+    padding: 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -6862,10 +7313,6 @@ img {
   align-self: center;
 }
 
-#w-node-_2e34e42b-9483-6816-6062-46dd74c27cd4-f6462ac3.w-node-_53a06e89-33da-b6ab-07d5-e11484bf3d3f-516d01d5, #w-node-_14635419-c07f-7b15-ec61-cc15d333db08-f6462ac3.w-node-_53a06e89-33da-b6ab-07d5-e11484bf3d45-516d01d5, #w-node-dc1a308d-62b0-dafa-44eb-4b40c9bff280-f6462ac3.w-node-_53a06e89-33da-b6ab-07d5-e11484bf3d51-516d01d5, #w-node-_675332fe-972c-450c-d9f5-dd2a3dc8d8c5-f6462ac3.w-node-_53a06e89-33da-b6ab-07d5-e11484bf3d57-516d01d5 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
-}
-
 #w-node-_9e12d28a-a203-35aa-fcc5-36ac3be47ae6-8afe22f8.w-node-_17c2d345-a9e1-dee2-55f9-5161a25d0276-a25d0212 {
   align-self: center;
 }
@@ -6918,10 +7365,6 @@ img {
 
   #w-node-a05dc56f-1a29-5710-6908-fcd37fa5a5ea-a44a14d8.w-node-b15b99ce-e5a5-dd3a-3681-c04a0fb71ffd-516d01d5 {
     grid-column: span 1 / span 1;
-  }
-
-  #w-node-_2e34e42b-9483-6816-6062-46dd74c27cd2-f6462ac3.w-node-_53a06e89-33da-b6ab-07d5-e11484bf3d5e-516d01d5 {
-    grid-area: span 1 / span 5 / span 1 / span 5;
   }
 
   #w-node-_9e12d28a-a203-35aa-fcc5-36ac3be47ae6-8afe22f8.w-node-_17c2d345-a9e1-dee2-55f9-5161a25d0276-a25d0212 {
